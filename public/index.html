@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>    
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@200;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="chat-container main">
+
+        <div class="chat-input-name">
+            <input type="text"  id="chat-user">
+            <div class="join-chat">JOIN CHAT!!</div>
+        </div>
+
+        <div class="chat-content hide">
+            <div class="chat-box">
+                <!-- <div class="chat right">
+                    <div class="chat-name">Steve</div>
+                    <div class="chat-text">Heyy Everyone!!</div>
+                </div>
+
+                <div class="chat join">Steve Joined the chat</div>
+
+                <div class="chat left">
+                    <div class="chat-name">Tony</div>
+                    <div class="chat-text">Heyy Guys!!</div>
+                </div> -->
+
+                <!-- <div class="chat leave">Steve left the chat</div> -->
+
+            </div>
+    
+            <div class="chat-input">
+                <input type="text" id="chat-input">
+                <div class="send"><i class="fas fa-paper-plane"></i></div>
+            </div>
+        </div>
+    </div>
+    <script src="./script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.2.0/socket.io.js" integrity="sha512-WL6WGKMPBiM9PnHRYIn5YEtq0Z8XP4fkVb4qy7PP4vhmYQErJ/dySyXuFIMDf1eEYCXCrQrMJfkNwKc9gsjTjA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>
+        const socket=io.connect("http://localhost:3000");
+    </script>
+    <script src="./socket.js"></script>
+</body>
+</html>

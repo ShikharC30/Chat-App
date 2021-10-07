@@ -1,0 +1,128 @@
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Raleway', sans-serif;
+}
+.chat-content{
+    height: 100%;
+}
+
+.hide{
+    display: none !important;
+}
+
+.chat-input-name{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#chat-user{
+
+}
+
+.join-chat{
+    color: white;
+    background: #34495e;
+    width:100px;
+    height: 20px;
+    text-align: center;
+    border-radius: 5px;
+    cursor:pointer;
+}
+
+.chat-container{
+    background: lightblue;
+    height:500px;
+    width:500px;
+    margin: auto;
+    /* horizontally beech mai aa jaata hai */
+    background-image: url("./image/whatsapp.jpg");
+    background-size: contain;
+
+}
+
+.chat-box{
+    height: 90%;
+    overflow: auto;
+}
+
+.chat{
+    
+    clear: both;
+    padding: 10px;
+    border-radius: 10px;
+    margin: 5px;
+}
+
+.chat-name{
+    font-weight: bold;
+}
+
+.main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.join{
+    color:white;
+    background: #3498db;
+    text-align: center;
+}
+
+.leave{
+    color:white;
+    background: #e74c3c;
+    text-align: center;
+}
+
+.chat-text{
+
+}
+
+.left{
+    background: white;
+    float: left;
+    color:#34495e;
+    max-width: 300px;
+    min-width: 150px;
+}
+
+.right{
+    background: #34495e;
+    float: right;
+    color: white;
+    max-width: 300px;
+    min-width: 150px;
+}
+
+.chat-input{
+    background: white;
+    width:90%;
+    border-radius: 10px;
+    margin:auto;
+    display: flex;
+    height:6%;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.chat-input input{
+    outline:none;
+    border:none;
+    height:100%;
+    width: 85%;
+    /* border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    background: lightgray; */
+}
+
+.send{
+
+}
+
+.fas{
+    color: lightgreen;
+}
